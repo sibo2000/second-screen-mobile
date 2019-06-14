@@ -7,8 +7,10 @@ class Step4 extends Component {
 
     render() {
         return (
-            <div>
-                done
+            <div className='allSet'>
+                <p>You're ready to explorer DAZN and watch the best sports from around the world. A a new member, enjoy a one month free trial. on [Date] you will start paying [Price] monthly.</p>
+                <button className='btn'>Get the app</button>
+                <button className='btn secondary'>Done</button>
             </div>
         )
     }

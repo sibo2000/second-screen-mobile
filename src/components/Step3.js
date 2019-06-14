@@ -33,10 +33,10 @@ class Step3 extends Component {
         return (
 
             <div>
+                <p className='btn' onClick={() => this.props.onChange({step: 4})}>Start watching now</p>
                 <div className='step4content'>
                     <header>
-                        <i className='logo'></i>
-                        Your dazn Subscription
+                        About your Subscription
                     </header>
                     <ul>
                         <li>Package: <span className='bold'>{this.props.package.package} {period}</span></li>
@@ -47,7 +47,6 @@ class Step3 extends Component {
                         <li>Payment method: <span>Credit card</span></li>
                     </ul>
                 </div>
-                <p className='btn' onClick={() => this.props.onChange({step: 4})}>Start watching now</p>
             </div>
         )
     }

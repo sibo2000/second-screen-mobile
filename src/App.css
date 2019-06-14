@@ -537,13 +537,14 @@ input {
 }
 
 .step4content {
-  background: var(--color-chalk);
+  background-color: var(--color-tarmac-light-10);
+  color: var(--color-chalk);
   text-align: left;
   padding: 18px;
 }
 
 .step4content header {
-  color: var(--color-tarmac);
+  color: var(--color-chalk);
   margin-bottom: 12px;
   text-transform: uppercase;
   padding: 12px 0 24px;
@@ -568,7 +569,6 @@ input {
 
 .step4content ul {
   clear: both;
-  color: var(--color-tarmac);
   font-family: 'oscine-bold';
   font-size: 16px;
 
@@ -678,4 +678,30 @@ b {
 .step4 .icon-chevron-thin-left,
 .step5 .icon-chevron-thin-left {
   display: none;
+}
+
+.allSet,
+.step4 .app-header {
+  background-color: var(--color-tarmac-light-10);
+
+}
+
+.allSet .btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+.allSet .btn.secondary {
+  background: var(--color-tarmac-light-20);
+  color: var(--color-chalk);
+}
+
+.allSet p {
+  line-height: 1.3;
+}
+
+.allSet {
+  padding: 0 24px 18px !important;
 }
