@@ -36,7 +36,7 @@ class App extends Component {
     }
 
     handeChange(data) {
-        if (data.step === 3) {
+        if (data.step === 4) {
             dbStep.set(5)
         }
         this.setState(data)
