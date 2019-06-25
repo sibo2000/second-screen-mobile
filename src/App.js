@@ -40,6 +40,7 @@ class App extends Component {
             dbStep.set(5)
         }
         this.setState(data)
+        window.scrollTo(0, 0)
     }
 
     componentDidMount() {
