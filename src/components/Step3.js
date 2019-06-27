@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SUBSCRIPTION, PAYMENT, DATE, ACTIONS } from "../constants"
 
 class Step3 extends Component {
     constructor(props) {
@@ -33,18 +34,18 @@ class Step3 extends Component {
         return (
 
             <div>
-                <p className='btn' onClick={() => this.props.onChange({step: 4})}>Start watching now</p>
+                <p className='btn' onClick={() => this.props.onChange({step: 4})}>{ACTIONS.start_watching}</p>
                 <div className='step4content'>
                     <header>
-                        About your Subscription
+                        {SUBSCRIPTION.about}
                     </header>
                     <ul>
-                        <li>Package: <span className='bold'>{this.props.package.package} {period}</span></li>
-                        <li>Subscription starts: <span>Today</span></li>
-                        <li>First payment date: <span>{this.formattedDate()}</span></li>
-                        <li>Free trial ends: <span>{this.formattedDatePlus()}</span></li>
-                        <li>Price per month: <span>{this.props.package.price} £/month</span></li>
-                        <li>Payment method: <span>Credit card</span></li>
+                        <li>{SUBSCRIPTION.package}: <span className='bold'>{this.props.package.package} {period}</span></li>
+                        <li>{SUBSCRIPTION.starts}: <span>{DATE.today}</span></li>
+                        <li>{SUBSCRIPTION.first_payment}: <span>{this.formattedDate()}</span></li>
+                        <li>{SUBSCRIPTION.trial_date}: <span>{this.formattedDatePlus()}</span></li>
+                        <li>{SUBSCRIPTION.monthly_price}: <span>{this.props.package.price} £/{DATE.month}</span></li>
+                        <li>{PAYMENT.method}: <span>{PAYMENT.card}</span></li>
                     </ul>
                 </div>
             </div>
@@ -53,8 +54,3 @@ class Step3 extends Component {
 }
 
 export default Step3;
-
-
-
-
-

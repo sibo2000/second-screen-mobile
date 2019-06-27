@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PAYMENT, ACTIONS } from "../constants"
 
 class Step2 extends Component {
     constructor(props) {
@@ -23,35 +24,30 @@ class Step2 extends Component {
                     <div className='card-item'>
                         <i className='icon-chevron-thin-right'></i>
                         <i className='icon-credit-card right'></i>
-                        <span>Credit Card</span>
+                        <span>{PAYMENT.card}</span>
                     </div>
                     <div className='card-item'>
                         <i className='icon-chevron-thin-right'></i>
                         <i className='icon-library right'></i>
-                        <span>Bank Account</span>
+                        <span>{PAYMENT.bank}</span>
                     </div>
                     <div className='card-item'>
                         <i className='icon-chevron-thin-right'></i>
                         <i className='icon-paypal right'></i>
-                        <span>PayPal</span>
+                        <span>{PAYMENT.paypal}</span>
                     </div>
 
                     <div className='card-item'>
                         <i className='icon-chevron-thin-right'></i>
                         <i className='logo right'></i>
-                        <span>Gift Code</span>
+                        <span>{PAYMENT.gift_code}</span>
                     </div>
 
                 </div>
-                <div className='btn' onClick={() => this.props.onChange({step: 3})}>Start Subscription</div>
+                <div className='btn' onClick={() => this.props.onChange({step: 3})}>{ACTIONS.start_subscription}</div>
             </div>
         )
     }
 }
 
 export default Step2;
-
-
-
-
-

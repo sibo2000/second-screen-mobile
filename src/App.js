@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HEADING, PACKAGE, ACTIONS, FOOTER } from "./constants"
 import './App.css';
 
 import * as firebase from 'firebase';
@@ -24,9 +25,6 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            period: 'Monthly',
-            package: 'Basic',
-            price: null,
             step: 1,
             permonth: null,
         }
@@ -59,11 +57,10 @@ class App extends Component {
     }
 
     packageInfo() {
-        const period = this.state.period === 'Annually' ? 'Annual' : 'Monthly';
         return (
             <div className='packageInfoText'>
-                <p className='uppercase'>{this.state.package} {period} package</p>
-                <p>Your free month trial will start today.<br/>From {this.formattedDate()} you will pay £{this.state.price} (inc tax). <br/> <span className='bold'>Cancel anytime</span></p>
+                <p className='uppercase'>{PACKAGE.title}</p>
+                <p>{PACKAGE.subtitle1} {this.formattedDate()} {PACKAGE.subtitle2}<br/> <span className='bold'>{ACTIONS.cancel_anytime}</span></p>
             </div>
         )
     }
@@ -75,7 +72,6 @@ class App extends Component {
     scrollTo() {
         window.scrollTo(0, 850)
     }
-
 
     render() {
 
@@ -93,18 +89,18 @@ class App extends Component {
 
         if (this.state.step === 1) {
             step = <Step1 onChange={this.handeChange} />
-            heading = 'Create Account';
+            heading = HEADING.create_account;
             subheader = this.packageInfo();
         } else if (this.state.step === 2) {
             step = <Step2 onChange={this.handeChange} />
-            heading = 'Payment Details';
+            heading = HEADING.payment_details;
             subheader = this.packageInfo();
         } else if (this.state.step === 3) {
             step = <Step3 onChange={this.handeChange} package={this.state} />
-            heading = "You're in";
+            heading = HEADING.you_are_in;
             subheader = this.packageInfo();
         } else if (this.state.step === 4) {
-            heading = 'YOU ARE ALL SET!';
+            heading = HEADING.all_set;
             step = <Step4 onChange={this.handeChange} package={this.state} />
             steps = <p className="steps"></p>
         }
@@ -120,9 +116,9 @@ class App extends Component {
 
                 <footer>
                     <ul>
-                        <li>Terms of Use</li>
-                        <li>Privacy Policy</li>
-                        <li>Link</li>
+                        <li>{FOOTER.terms}</li>
+                        <li>{FOOTER.privacy}</li>
+                        <li>{FOOTER.link}</li>
                     </ul>
                 </footer>
             </div>
