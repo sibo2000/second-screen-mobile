@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HEADING, PACKAGE, ACTIONS, FOOTER } from "./constants"
+import { HEADING, PACKAGE, ACTIONS, FOOTER, STEPS } from "./constants"
 import './App.css';
 
 import * as firebase from 'firebase';
@@ -59,7 +59,7 @@ class App extends Component {
     packageInfo() {
         return (
             <div className='packageInfoText'>
-                <p>{PACKAGE.subtitle1} {this.formattedDate()} {PACKAGE.subtitle2}<br/> <span className='bold'>{ACTIONS.cancel_anytime}</span></p>
+                <p>{PACKAGE.subtitle1} {this.formattedDate()} {PACKAGE.subtitle2}</p>
             </div>
         )
     }
@@ -82,7 +82,7 @@ class App extends Component {
         const stepClass = `step${this.state.step}`;
 
         steps = <div>
-                    <p className="steps">Step {this.state.step} of 3</p>
+                    <p className="steps">{STEPS.step} {this.state.step} {STEPS.of}</p>
                     <i className='icon-chevron-thin-left'onClick={this.back}></i>
                 </div>
 
@@ -115,6 +115,7 @@ class App extends Component {
 
                 <footer>
                     <ul>
+                        <li>{FOOTER.help}</li>
                         <li>{FOOTER.terms}</li>
                         <li>{FOOTER.privacy}</li>
                         <li>{FOOTER.imprint}</li>

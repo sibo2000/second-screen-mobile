@@ -1,7 +1,7 @@
 export const PACKAGE = {
   title: 'Basic monthly package',
   subtitle1: 'Your free month trial will start today. From',
-  subtitle2: 'you will pay €9.99 (inc tax).'
+  subtitle2: 'you will pay £9.99 (inc tax).'
 }
 
 export const FORM = {
@@ -25,6 +25,7 @@ export const ACTIONS = {
 }
 
 export const FOOTER = {
+  help: 'Help',
   terms: 'Terms of Use',
   privacy: 'Privacy Policy',
   imprint: 'Imprint',
@@ -58,4 +59,9 @@ export const HEADING = {
   payment_details: 'Payment Details',
   you_are_in: 'You’re in',
   all_set: 'You are all set!'
+}
+
+export const STEPS = {
+  step: 'Step',
+  of: 'of 3'
 }
