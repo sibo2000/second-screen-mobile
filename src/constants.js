@@ -1,61 +1,64 @@
 export const PACKAGE = {
-  title: 'Basic monthly package',
-  subtitle1: 'Your free month trial will start today. From',
-  subtitle2: 'you will pay €9.99 (inc tax).'
+  subtitle1: 'Dein Gratismonat beginnt heute. Ab',
+  subtitle2: 'zahlst du 9,99 € (einschl. MwSt.) monatlich bis zur Beendigung der Mitgliedschaft.'  
 }
 
 export const FORM = {
-  first_name: 'First Name',
-  last_name: 'Last Name',
-  email: 'Email',
-  confirm_email: 'Confirm Email',
-  password: 'Password',
-  news_agreement: 'Yes, please send me emails with exclusive content, product updates & notifications of DAZN'
+  first_name: 'Vorname',
+  last_name: 'Nachname',
+  email: 'E-Mail-Adresse',
+  confirm_email: 'E-Mail-Adresse bestätigen',
+  password: 'Passwort',
+  news_agreement: 'Ja, ich möchte per E-Mail über exklusive Inhalte, Produkt-Updates und Neuigkeiten von DAZN informiert werden.'
 }
 
 export const ACTIONS = {
-  continue: 'Continue',
-  already_member: 'Already a member?', 
-  sign_in: 'Sign in',
-  start_subscription: 'Start Subscription',
-  start_watching: 'Start watching',
-  get_app: 'Get the app',
-  done: 'Done',
-  cancel_anytime: 'Cancel anytime'
+  continue: 'Weiter',
+  already_member: 'Bereits Mitglied?', 
+  sign_in: 'Anmelden.',
+  start_watching: 'Jetzt ansehen',
+  get_app: 'App herunterladen',
+  done: 'Fertig'
 }
 
 export const FOOTER = {
-  terms: 'Terms of Use',
-  privacy: 'Privacy Policy',
-  imprint: 'Imprint',
-  media: 'Media'
+  help: 'Hilfe',
+  terms: 'Nutzungsbedingungen',
+  privacy: 'Datenschutzerklärung',
+  imprint: 'Impressum',
+  media: 'Medien'
 }
 
 export const PAYMENT = {
-  method: 'Payment method',
-  card: 'Card',
-  bank: 'Bank Account',
+  method: 'Zahlungsmethode',
+  card: 'Karte',
+  bank: 'Bankkonto',
   paypal: 'Paypal',
-  gift_code: 'Gift Code'
+  gift_code: 'Gutscheincode'
 }
 
 export const SUBSCRIPTION = {
-  about: 'About your subscription',
+  about: 'Angaben zur Mitgliedschaft',
   package: 'Package',
-  starts: 'Access starts',
-  first_payment: 'First payment date',
-  trial_date: 'Free trial end date',
-  monthly_price: 'Monthly price',
+  starts: 'Zugang startet',
+  first_payment: 'Erste Zahlung fällig am',
+  trial_date: 'Gratishpase endet',
+  monthly_price: 'Monatlicher Preis',
 }
 
 export const SUCCESS = {
-  subtitle1: 'You’re ready to explorer DAZN and watch the best sports from around the world. As a new member, enjoy a one month free trial. On',
-  subtitle2: 'you will start paying [Price] monthly.'
+  subtitle1: 'Du kannst das Angebot von DAZN jetzt erkunden und die besten Sportübertragungen aus aller Welt sehen. Als neues Mitglied ist dein erster Monat gratis. Ab',
+  subtitle2: 'zahlst du dann 9,99 € im Monat.'
 }
 
 export const HEADING = {
-  create_account: 'Create Account',
-  payment_details: 'Payment Details',
-  you_are_in: 'You’re in',
-  all_set: 'You are all set!'
+  create_account: 'Konto erstellen',
+  payment_details: 'Zahlungsdetails',
+  you_are_in: 'Du bist angemeldet',
+  all_set: 'Du bist angemeldet'
+}
+
+export const STEPS = {
+  step: 'Schritt',
+  of: 'von 3'
 }
