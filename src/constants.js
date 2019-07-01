@@ -1,8 +1,3 @@
-export const STEP1 = {
-  title: 'Step 1 of 3',
-  subtitle: 'Your free month trial starts today. From XX.XX.XXXX you will pay €9.99 (inc tax) monthly until cancelled. Change package'
-}
-
 export const PACKAGE = {
   title: 'Basic monthly package',
   subtitle1: 'Your free month trial will start today. From',
