@@ -44,7 +44,7 @@ class Step2 extends Component {
                     </div>
 
                 </div>
-                <div className='btn' onClick={() => this.props.onChange({step: 3})}>{ACTIONS.start_subscription}</div>
+                <div className='btn' onClick={() => this.props.onChange({step: 3})}>{ACTIONS.continue}</div>
             </div>
         )
     }
