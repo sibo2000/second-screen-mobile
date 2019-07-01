@@ -35,7 +35,7 @@ class Step1 extends Component {
                         <p>{FORM.news_agreement}...</p>
                     </div>
                 </div>
-                <div className='btn' onClick={() => this.props.onChange({step: 2})}>{ACTIONS.create_account}</div>
+                <div className='btn' onClick={() => this.props.onChange({step: 2})}>{ACTIONS.continue}</div>
                 <p className='login'>{ACTIONS.already_member} <a href=''>{ACTIONS.sign_in}</a></p>
             </div>
         )

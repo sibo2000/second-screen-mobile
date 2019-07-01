@@ -59,7 +59,6 @@ class App extends Component {
     packageInfo() {
         return (
             <div className='packageInfoText'>
-                <p className='uppercase'>{PACKAGE.title}</p>
                 <p>{PACKAGE.subtitle1} {this.formattedDate()} {PACKAGE.subtitle2}<br/> <span className='bold'>{ACTIONS.cancel_anytime}</span></p>
             </div>
         )
@@ -118,7 +117,8 @@ class App extends Component {
                     <ul>
                         <li>{FOOTER.terms}</li>
                         <li>{FOOTER.privacy}</li>
-                        <li>{FOOTER.link}</li>
+                        <li>{FOOTER.imprint}</li>
+                        <li>{FOOTER.media}</li>
                     </ul>
                 </footer>
             </div>

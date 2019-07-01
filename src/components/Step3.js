@@ -7,6 +7,17 @@ class Step3 extends Component {
         console.log(props)
     }
 
+    formattedDateToday(d = new Date) {
+        let month = String(d.getMonth() + 1);
+        let day = String(d.getDate() + 1);
+        const year = String(d.getFullYear());
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return `${day}/${month}/${year}`;
+    }
+
     formattedDate(d = new Date) {
         let month = String(d.getMonth() + 2);
         let day = String(d.getDate() + 1);
@@ -41,10 +52,10 @@ class Step3 extends Component {
                     </header>
                     <ul>
                         <li>{SUBSCRIPTION.package}: <span className='bold'>{this.props.package.package} {period}</span></li>
-                        <li>{SUBSCRIPTION.starts}: <span>{DATE.today}</span></li>
+                        <li>{SUBSCRIPTION.starts}: <span>{this.formattedDateToday()}</span></li>
                         <li>{SUBSCRIPTION.first_payment}: <span>{this.formattedDate()}</span></li>
                         <li>{SUBSCRIPTION.trial_date}: <span>{this.formattedDatePlus()}</span></li>
-                        <li>{SUBSCRIPTION.monthly_price}: <span>{this.props.package.price} £/{DATE.month}</span></li>
+                        <li>{SUBSCRIPTION.monthly_price}: <span>{this.props.package.price} €9.99</span></li>
                         <li>{PAYMENT.method}: <span>{PAYMENT.card}</span></li>
                     </ul>
                 </div>

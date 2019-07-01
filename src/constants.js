@@ -6,7 +6,7 @@ export const STEP1 = {
 export const PACKAGE = {
   title: 'Basic monthly package',
   subtitle1: 'Your free month trial will start today. From',
-  subtitle2: 'you will pay £ (inc tax).'
+  subtitle2: 'you will pay €9.99 (inc tax).'
 }
 
 export const FORM = {
@@ -19,11 +19,11 @@ export const FORM = {
 }
 
 export const ACTIONS = {
-  create_account: 'Create Account',
+  continue: 'Continue',
   already_member: 'Already a member?', 
   sign_in: 'Sign in',
   start_subscription: 'Start Subscription',
-  start_watching: 'Start watching now',
+  start_watching: 'Start watching',
   get_app: 'Get the app',
   done: 'Done',
   cancel_anytime: 'Cancel anytime'
@@ -32,12 +32,13 @@ export const ACTIONS = {
 export const FOOTER = {
   terms: 'Terms of Use',
   privacy: 'Privacy Policy',
-  link: 'Link'
+  imprint: 'Imprint',
+  media: 'Media'
 }
 
 export const PAYMENT = {
   method: 'Payment method',
-  card: 'Credit Card',
+  card: 'Card',
   bank: 'Bank Account',
   paypal: 'Paypal',
   gift_code: 'Gift Code'
@@ -50,11 +51,6 @@ export const SUBSCRIPTION = {
   first_payment: 'First payment date',
   trial_date: 'Free trial end date',
   monthly_price: 'Monthly price',
-}
-
-export const DATE = {
-  today: 'Today',
-  month: 'month'
 }
 
 export const SUCCESS = {
