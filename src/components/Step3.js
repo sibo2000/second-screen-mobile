@@ -51,11 +51,10 @@ class Step3 extends Component {
                         {SUBSCRIPTION.about}
                     </header>
                     <ul>
-                        <li>{SUBSCRIPTION.package}: <span className='bold'>{this.props.package.package} {period}</span></li>
                         <li>{SUBSCRIPTION.starts}: <span>{this.formattedDateToday()}</span></li>
                         <li>{SUBSCRIPTION.first_payment}: <span>{this.formattedDate()}</span></li>
                         <li>{SUBSCRIPTION.trial_date}: <span>{this.formattedDatePlus()}</span></li>
-                        <li>{SUBSCRIPTION.monthly_price}: <span>{this.props.package.price} €9.99</span></li>
+                        <li>{SUBSCRIPTION.monthly_price}: <span>{this.props.package.price} 9.99 €</span></li>
                         <li>{PAYMENT.method}: <span>{PAYMENT.card}</span></li>
                     </ul>
                 </div>
