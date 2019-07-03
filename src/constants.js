@@ -1,6 +1,6 @@
 export const PACKAGE = {
   subtitle1: 'Dein Gratismonat beginnt heute. Ab',
-  subtitle2: 'zahlst du 9,99 € (einschl. MwSt.) monatlich bis zur Beendigung der Mitgliedschaft.'  
+  subtitle2: 'zahlst du 9,99 € (inkl. MwSt.) monatlich bis zur Beendigung der Mitgliedschaft.'  
 }
 
 export const FORM = {
@@ -40,7 +40,7 @@ export const PAYMENT = {
 export const SUBSCRIPTION = {
   about: 'Angaben zur Mitgliedschaft',
   package: 'Package',
-  starts: 'Zugang startet',
+  starts: 'Abo startet',
   first_payment: 'Erste Zahlung fällig am',
   trial_date: 'Gratishpase endet',
   monthly_price: 'Monatlicher Preis',
